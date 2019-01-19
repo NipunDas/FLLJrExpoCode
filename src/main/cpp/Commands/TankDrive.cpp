@@ -11,6 +11,7 @@
 TankDrive::TankDrive() {
   // Use Requires() here to declare subsystem dependencies
   // eg. Requires(Robot::chassis.get());
+	Requires(Robot::drive);
 }
 
 // Called just before this Command runs the first time
