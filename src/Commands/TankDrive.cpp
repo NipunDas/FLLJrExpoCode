@@ -28,7 +28,7 @@ void TankDrive::Execute() {
 
 
 	Robot::m_drivetrain ->tankDrive(leftPower,rightPower);*/
-	Robot::m_drivetrain->tankDrive((Robot::m_oi->getjoyStickLeft()->GetY(), Robot::m_oi->getjoyStickRight()->GetY())/2);
+	Robot::m_drivetrain->tankDrive(Robot::m_oi->getjoyStickLeft()->GetY()*0.3, Robot::m_oi->getjoyStickRight()->GetY()*0.3);
 	//call tankdrive method here. Ex. Robot::drive->tankDrive()
 	//when calling methods from oi, do oi::methodName()
 
